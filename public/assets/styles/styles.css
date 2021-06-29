@@ -1,0 +1,222 @@
+/*! * Bootstrap v4.1.0 (https://getbootstrap.com/) * Copyright 2011-2018 The Bootstrap Authors * Copyright 2011-2018 Twitter, Inc. * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+@charset "UTF-8"
+/* Styles Begins */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  overflow-x: hidden;
+}
+.btn-xl {
+  padding: 20px 40px;
+}
+.content-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.content-section-heading h2 {
+  font-size: 48px;
+}
+.content-section-heading h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 700;
+}
+.block-heading {
+  margin-bottom: 40px;
+  text-align: center;
+}
+/* Side Menu */
+.logo {
+	position: absolute;
+	z-index: 99;
+	left: 50px;
+	top: 20px;
+}
+.logo i {
+	font-size: 50px;
+	color: #fff;
+}
+span {
+	color: #fff;
+	vertical-align: middle;
+	margin-left: 9px;
+	font-size: 24px;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-transform: capitalize;
+}
+.menu-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 50px;
+  z-index: 999;
+}
+.menu-toggle:focus, .menu-toggle:hover {
+  color: #fff;
+}
+.menu-toggle:hover {
+  background: #343a40;
+}
+#Banner {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(274deg, #c962f7, #6262e2 44%, #46c8d0 );
+  color: #fff;
+}
+#Banner .content-wrap {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  left: 50%;
+}
+#Banner .content-wrap h1 {
+  font-size: 80px;
+  margin: 0 0 30px;
+  padding: 0;
+}
+#Banner .content-wrap h3 {
+  font-size: 24px;
+  margin: 0 0 30px;
+  padding: 0;
+}
+#Banner .btn-primary {
+  background-color: #02ccba;
+  color: #fff;
+  border: none;
+}
+#Banner .btn-primary:hover {
+	background-color: #07bcab;
+}
+#Services {
+  background-color: #fafafa;
+}
+#Services .service-box {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+}
+#Services .service-icon {
+  width: 100%;
+  height: 220px;
+  padding: 20px;
+  text-align: center;
+  transition: all .5s ease;
+}
+#Services .service-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  width: 100%;
+  height: 220px;
+  padding: 20px;
+  text-align: center;
+  transition: all .5s ease;
+  background-color: #474747;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  -webkit-transform: translateY(110px) rotateX(-180deg);
+  -moz-transform: translateY(110px) rotateX(-180deg);
+  -ms-transform: translateY(110px) rotateX(-180deg);
+  -o-transform: translateY(110px) rotateX(-180deg);
+  transform: translateY(110px) rotateX(-180deg);
+}
+#Services .service-box .service-icon .front-content {
+  position: relative;
+  top: 80px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#Services .service-box .service-icon .front-content i {
+  font-size: 28px;
+  color: #fff;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+#Services .service-box .service-icon .front-content h3 {
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+#Services .service-box .service-content h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+#Services .service-box .service-content p {
+  font-size: 13px;
+  color: #fff;
+  margin: 0;
+}
+#Services .service-box .yellow {
+  background-color: #02b3e4;
+}
+#Services .service-box .orange {
+  background-color: #02ccba;
+}
+#Services .service-box .red {
+  background-color: #02b3e4;
+}
+#Services .service-box .grey {
+  background-color: #02ccba;
+}
+#Services .service-box:hover .service-icon {
+  opacity: 5;
+  -webkit-transform: rotateX(25deg) rotateY(0deg);
+  -moz-transform: rotateX(25deg) rotateY(0deg);
+  -ms-transform: rotateX(25deg) rotateY(0deg);
+  -o-transform: rotateX(25deg) rotateY(0deg);
+  transform: rotateX(25deg) rotateY(0deg);
+}
+#Services .service-box:hover .service-content {
+  opacity: 1;
+  -webkit-transform: rotateX(25deg) rotateY(0deg);
+  -moz-transform: rotateX(25deg) rotateY(0deg);
+  -ms-transform: rotateX(25deg) rotateY(0deg);
+  -o-transform: rotateX(25deg) rotateY(0deg);
+  transform: rotateX(25deg) rotateY(0deg);
+}
+footer.footer {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #fafafa;
+}
+footer.footer .social-link {
+  display: block;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  background-color: #02ccba;
+  color: #fff;
+  border: none;
+  padding: 10px;
+}
+footer.footer .social-link:hover {
+	background-color: #07bcab;
+}
+footer.footer p.small a {
+	color: #636c72;
+	text-decoration: none;
+}
+footer.footer p.small a:hover, footer.footer p.small a.focus {
+	color: #02ccba;
+	text-decoration: none;
+}
+/* Styles Begins */
